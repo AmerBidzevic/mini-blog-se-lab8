@@ -81,4 +81,4 @@ npm test
 
 ## Deployment
 
-Deployment is optional for the assignment. A live URL can be added here if the project is deployed later.
+Live Render deployment: https://mini-blog-se-lab8.onrender.com/
