@@ -1,0 +1,17 @@
+{
+  "name": "mini-blog-se-lab8",
+  "version": "1.0.0",
+  "description": "A Ghost-inspired mini blog CMS for Software Engineering Lab 8.",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "test": "node backend/tests/patterns.test.js"
+  },
+  "keywords": [
+    "cms",
+    "ghost",
+    "design-patterns"
+  ],
+  "author": "Amer Bidzevic",
+  "license": "MIT"
+}
