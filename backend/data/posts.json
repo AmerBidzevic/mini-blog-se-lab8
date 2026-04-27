@@ -1,0 +1,45 @@
+[
+  {
+    "id": "post-1c9dd93c-310f-42b5-971f-e825e400ba9e",
+    "title": "Testing my stuff",
+    "slug": "testing-my-stuff",
+    "excerpt": "This i my Test post",
+    "content": "This i my Test post",
+    "status": "draft",
+    "author": "Amer Bidzevic",
+    "tags": [],
+    "createdAt": "2026-04-27T09:35:16.717Z",
+    "updatedAt": "2026-04-27T09:35:16.717Z"
+  },
+  {
+    "id": "post-ghost-architecture",
+    "title": "Why Ghost Inspired This Mini CMS",
+    "slug": "why-ghost-inspired-this-mini-cms",
+    "excerpt": "A short note about taking Ghost's publishing ideas and making them smaller for Lab 8.",
+    "content": "Ghost is a publishing platform focused on posts, authors, newsletters, and clean editorial workflows. This mini app keeps the same domain but narrows it to posts, publishing status, tags, and summaries.",
+    "status": "archived",
+    "author": "Amer Bidzevic",
+    "tags": [
+      "ghost",
+      "cms",
+      "lab-8"
+    ],
+    "createdAt": "2026-04-27T09:00:00.000Z",
+    "updatedAt": "2026-04-27T09:35:37.570Z"
+  },
+  {
+    "id": "post-patterns",
+    "title": "Patterns Added Deliberately",
+    "slug": "patterns-added-deliberately",
+    "excerpt": "The app uses Builder, Decorator, Facade, Command, Strategy, and Observer in small practical places.",
+    "content": "The main goal is not to build a huge CMS. It is to show where design patterns reduce the exact problems found in the Ghost analysis: large creation methods, repeated wrappers, and hardcoded request behavior.",
+    "status": "published",
+    "author": "Amer Bidzevic",
+    "tags": [
+      "patterns",
+      "software-engineering"
+    ],
+    "createdAt": "2026-04-27T09:10:00.000Z",
+    "updatedAt": "2026-04-27T09:35:39.035Z"
+  }
+]

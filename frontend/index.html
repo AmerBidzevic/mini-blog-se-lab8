@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ghost Lab Mini CMS</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Software Engineering Lab 8</p>
+        <h1>Ghost Lab Mini CMS</h1>
+      </div>
+      <div class="stats" id="stats"></div>
+    </header>
+
+    <main class="layout">
+      <section class="editor-panel" aria-labelledby="editor-title">
+        <h2 id="editor-title">New post</h2>
+        <form id="post-form">
+          <label>
+            Title
+            <input name="title" required maxlength="90" placeholder="Editorial workflow notes">
+          </label>
+          <label>
+            Author
+            <input name="author" maxlength="70" value="Amer Bidzevic">
+          </label>
+          <label>
+            Tags
+            <input name="tags" maxlength="100" placeholder="ghost, cms, patterns">
+          </label>
+          <label>
+            Status
+            <select name="status">
+              <option value="draft">Draft</option>
+              <option value="published">Published</option>
+              <option value="archived">Archived</option>
+            </select>
+          </label>
+          <label>
+            Content
+            <textarea name="content" required rows="8" placeholder="Write a short post..."></textarea>
+          </label>
+          <button type="submit">Create post</button>
+        </form>
+      </section>
+
+      <section class="content-panel" aria-labelledby="posts-title">
+        <div class="posts-header">
+          <div>
+            <p class="eyebrow">Mini publishing desk</p>
+            <h2 id="posts-title">Posts</h2>
+          </div>
+          <select id="summary-mode" aria-label="Summary mode">
+            <option value="short">Short summary</option>
+            <option value="reading">Reading time</option>
+            <option value="editorial">Editorial view</option>
+          </select>
+        </div>
+        <div id="posts" class="posts"></div>
+      </section>
+
+      <aside class="activity-panel" aria-labelledby="activity-title">
+        <h2 id="activity-title">Activity</h2>
+        <ul id="activity"></ul>
+      </aside>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
