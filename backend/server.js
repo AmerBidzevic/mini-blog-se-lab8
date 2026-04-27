@@ -12,6 +12,7 @@ const cms = new CmsFacade();
 const postService = cms.getPostService();
 
 const routes = [
+  ['GET', /^\/api\/health$/, getHealth],
   ['GET', /^\/api\/posts$/, listPosts],
   ['POST', /^\/api\/posts$/, createPost],
   ['PATCH', /^\/api\/posts\/([^/]+)\/status$/, changePostStatus],
@@ -122,9 +123,13 @@ function contentType(filePath) {
 }
 
 if (require.main === module) {
-  server.listen(PORT, () => {
+  server.listen(PORT, '0.0.0.0', () => {
     console.log(`Mini Ghost CMS running at http://localhost:${PORT}`);
   });
 }
 
 module.exports = {server};
+
+function getHealth(_req, res) {
+  sendJson(res, 200, {status: 'ok'});
+}

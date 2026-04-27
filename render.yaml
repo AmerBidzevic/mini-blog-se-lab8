@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: mini-blog-se-lab8
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    autoDeployTrigger: commit
