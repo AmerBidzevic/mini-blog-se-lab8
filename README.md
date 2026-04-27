@@ -2,6 +2,8 @@
 
 A Ghost-inspired mini blog/CMS built for Software Engineering Lab 8.
 
+I analyzed Ghost in Labs 5-7 (category: CMS / publishing platform). I am building Ghost Lab Mini CMS, which belongs to the same category.
+
 ## Tech Stack
 
 - Backend: Node.js built-in HTTP server
